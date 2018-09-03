@@ -1,0 +1,22 @@
+#nav-main {
+  position: relative;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: black;
+}
+
+a {
+  color: salmon;
+}
+
+#content h1 {
+  text-align: center;
+  color: green;
+  margin: 2rem;
+}
+
+#content p {
+  margin-top: 2rem;
+}
