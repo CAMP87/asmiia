@@ -1,10 +1,10 @@
 === Under Construction ===
-Contributors: WebFactory, UnderConstructionPage
+Contributors: WebFactory, UnderConstructionPage, googlemapswidget
 Tags: maintenance mode, maintenance page, coming soon page, landing page, under construction, under construction page, coming soon, launch page, coming soon mode, maintenance mode page, offline page, maintenance
 Requires at least: 4.0
 Requires PHP: 5.2
 Tested up to: 4.9
-Stable tag: 3.10
+Stable tag: 3.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -121,14 +121,22 @@ Or if needed, upload manually;
 30. Hard Worker theme
 31. Temporarily Closed theme
 32. Dumper Truck theme
-33. Main settings
-34. Design settings
-35. Content settings
-36. Access settings
-37. Support
+33. 000webhost theme
+34. Main settings
+35. Design settings
+36. Content settings
+37. Access settings
+38. Support
 
 
 == Changelog ==
+
+= 3.15 =
+* 2018/08/22
+* minor bug fixes
+* new theme: 000webhost
+* added custom settings for 000webhost users
+* we're at 1,634,783 downloads
 
 = 3.10 =
 * 2018/06/19

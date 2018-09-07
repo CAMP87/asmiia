@@ -4,7 +4,7 @@
   Plugin URI: https://underconstructionpage.com/
   Description: Put your site behind a great looking under construction, coming soon, maintenance mode or landing page.
   Author: WebFactory Ltd
-  Version: 3.10
+  Version: 3.15
   Author URI: https://www.webfactoryltd.com/
   Text Domain: under-construction-page
   Domain Path: lang
@@ -1144,8 +1144,48 @@ class UCP {
                       'whitelisted_roles' => array('administrator'),
                       'whitelisted_users' => array()
                       );
+    
+    $defaults_000 = array('status' => '1',
+                      'license_key' => '',
+                      'license_active' => false,
+                      'license_expires' => '1900-01-01',
+                      'license_type' => '',
+                      'end_date' => '',
+                      'ga_tracking_id' => '',
+                      'theme' => '000webhost',
+                      'custom_css' => '',
+                      'title' => '[site-title] is under construction',
+                      'description' => '[site-tagline]',
+                      'heading1' => __('We\'re building our brand new site', 'under-construction-page'),
+                      'content' => __('Powered by <a href="https://www.000webhost.com/" target="_blank">000webhost</a>.', 'under-construction-page'),
+                      'social_facebook' => '',
+                      'social_twitter' => '',
+                      'social_google' => '',
+                      'social_linkedin' => '',
+                      'social_youtube' => '',
+                      'social_vimeo' => '',
+                      'social_pinterest' => '',
+                      'social_dribbble' => '',
+                      'social_behance' => '',
+                      'social_instagram' => '',
+                      'social_tumblr' => '',
+                      'social_vk' => '',
+                      'social_email' => '',
+                      'social_phone' => '',
+                      'social_skype' => '',
+                      'social_telegram' => '',
+                      'social_whatsapp' => '',
+                      'login_button' => '1',
+                      'linkback' => '0',
+                      'whitelisted_roles' => array('administrator'),
+                      'whitelisted_users' => array()
+                      );
 
-    return $defaults;
+    if (stripos($_SERVER['HTTP_HOST'], '000webhost') !== false) {
+      return $defaults_000;
+    } else {
+      return $defaults;
+    }
   } // default_options
 
 
@@ -1674,7 +1714,8 @@ class UCP {
                     'hard_worker' => __('Hard Worker', 'under-construction-page'),
                     'closed' => __('Temporarily Closed', 'under-construction-page'),
                     '_pro_animated-green' => __('Simple Green Animated', 'under-construction-page'),
-                    'dumper_truck' => __('Dumper Truck', 'under-construction-page'));
+                    'dumper_truck' => __('Dumper Truck', 'under-construction-page'),
+                    '000webhost' => __('000webhost', 'under-construction-page'));
 
     $themes = apply_filters('ucp_themes', $themes);
 

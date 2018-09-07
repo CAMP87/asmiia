@@ -22,6 +22,10 @@
   margin-right: 4px;
 }
 
+.settings_page_ucp .epsilon-framework-notice {
+  display: none;
+}
+
 .settings_page_ucp .button:hover,
 .settings_page_ucp .button-primary:hover,
 .settings_page_ucp .button-secondary:hover,
@@ -194,10 +198,6 @@ div.ucp-thumb .buttons {
 
 div.ucp-thumb .buttons a {
   margin-right: 10px;
-}
-
-.wp-core-ui div.ucp-thumb .button-primary:active, .wp-core-ui div.ucp-thumb .button-secondary:active {
-  vertical-align: inherit;
 }
 
 div.ucp-thumb.active {
